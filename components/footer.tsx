@@ -1,4 +1,5 @@
 import { Facebook, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,8 +7,11 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
           <div>
-            <div className="text-2xl font-bold mb-4">
-              APAS<span className="text-accent">.</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/apas-logo.jpeg" alt="APAS Logo" width={40} height={40} className="rounded-full" />
+              <div className="text-2xl font-bold">
+                <span className="text-accent">APAS</span>
+              </div>
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               Agence de Promotion pour l'Assurance Santé - Votre partenaire de confiance pour faciliter l'accès aux

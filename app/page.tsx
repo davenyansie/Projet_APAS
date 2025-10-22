@@ -4,6 +4,9 @@ import { ServicesSection } from "@/components/services-section"
 import { AboutSection } from "@/components/about-section"
 import { AtoutsSection } from "@/components/atouts-section"
 import { StatsSection } from "@/components/stats-section"
+import { NewsSection } from "@/components/news-section"
+import { TestimonialsSection } from "@/components/testimonials-section"
+import { HospitalsSection } from "@/components/hospitals-section"
 import { PartnersSection } from "@/components/partners-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
@@ -18,6 +21,9 @@ export default function Home() {
         <AboutSection />
         <AtoutsSection />
         <StatsSection />
+        <NewsSection />
+        <TestimonialsSection />
+        <HospitalsSection />
         <PartnersSection />
         <ContactSection />
       </main>

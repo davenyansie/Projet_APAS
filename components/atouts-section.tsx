@@ -36,10 +36,12 @@ const atouts = [
 
 export function AtoutsSection() {
   return (
-    <section id="atouts" className="py-20 lg:py-32 bg-muted/30">
+    <section id="atouts" className="py-12 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-balance">Nos Atouts</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-balance text-accent">
+            Nos Atouts
+          </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             Ce qui fait de nous votre partenaire de confiance pour l'assurance santé
           </p>

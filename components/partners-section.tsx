@@ -76,13 +76,13 @@ export function PartnersSection() {
     }
   }, [])
 
-  const duplicatedPartners = [...partners, ...partners]
+  const duplicatedPartners = [...partners, ...partners, ...partners]
 
   return (
     <section className="py-16 bg-background border-y border-border overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Nos Partenaires</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">Nos Partenaires</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Nous collaborons avec les plus grandes compagnies d'assurance pour vous offrir les meilleures solutions
           </p>
@@ -92,7 +92,7 @@ export function PartnersSection() {
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-          <div ref={scrollRef} className="flex gap-12 animate-scroll hover:pause-animation">
+          <div ref={scrollRef} className="flex gap-12 animate-scroll pause-animation">
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
@@ -101,7 +101,7 @@ export function PartnersSection() {
                 <div className="relative w-40 h-28 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-xl">
                   <Image src={partner.logo || "/placeholder.svg"} alt={partner.name} fill className="object-contain" />
                 </div>
-                <p className="text-center font-medium text-sm text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                <p className="text-center font-medium text-sm text-muted-foreground group-hover:text-accent transition-colors duration-300">
                   {partner.name}
                 </p>
               </div>

@@ -23,10 +23,10 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-muted/30">
+    <section id="contact" className="py-12 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-balance text-accent">
             Contactez-nous
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
@@ -84,11 +84,7 @@ export function ContactSection() {
                     />
                   </div>
 
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-                  >
+                  <Button type="submit" size="lg" className="w-full bg-accent text-white hover:bg-accent/90">
                     Envoyer le message
                   </Button>
                 </form>
